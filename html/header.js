@@ -1,5 +1,4 @@
 var header = `<div class="row max-inner">
-
 <div class="columns col-2">
   <a href="index.html" title="Indigo" class="logo">Indigo</a>
 </div>
