@@ -1,4 +1,4 @@
-var menu = ` <div class="row max-inner">
+var header = ` <div class="row max-inner">
 
 <div class="columns col-2">
   <a href="index.html" title="Indigo" class="logo">Indigo</a>
@@ -45,4 +45,4 @@ var menu = ` <div class="row max-inner">
 
 </div>`;
 
-document.getElementsByClassName("header").innerHTML = menu;
+document.getElementById("header").innerHTML = header;
