@@ -5,18 +5,19 @@ var header = ` <div class="row max-inner">
 </div>
 
 <div class="columns col-6">
-  <a href="#" class="toggle-nav">
-    <i class="fa fa-bars"></i> Menu
-  </a>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="shop.html">CATALOG</a></li>
-      <li><a href="Aboutus.html">ABOUT US</a></li>
-      <li><a href="useraccount.html"></a>MY ACCOUNT</li>
-    </ul>
-  </nav>
+<a href="#" class="toggle-nav">
+  <i class="fa fa-bars"></i> Menu
+</a>
+<nav class="main-nav"  >
+  <ul>
+    <li style="display: inline;"><a href="index.html">HOME</a></li>
+    <li style="display: inline;"><a href="shop.html">CATALOG</a></li>
+    <li style="display: inline;"><a href="Aboutus.html">ABOUT US</a></li>
+    <li style="display: inline;"><a href="useraccount.html"></a>MY ACCOUNT</li>
+  </ul>
+</nav>
 </div>
+
 
 <div class="columns col-4">
   <ul class="header-controls">
