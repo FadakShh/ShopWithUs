@@ -10,10 +10,10 @@ var header = ` <div class="row max-inner">
 </a>
 <nav class="main-nav"  >
   <ul>
-    <li style="display: inline;"><a href="index.html">HOME</a></li>
-    <li style="display: inline;"><a href="shop.html">CATALOG</a></li>
-    <li style="display: inline;"><a href="Aboutus.html">ABOUT US</a></li>
-    <li style="display: inline;"><a href="useraccount.html"></a>MY ACCOUNT</li>
+    <li  style="display: inline;"><a href="index.html"><p class="menucu">HOME</p></a></li>
+    <li  style="display: inline;"><a href="shop.html"><p class="menucu">CATALOG</p></a></li>
+    <li  style="display: inline;"><a href="Aboutus.html"><p class="menucu">ABOUT US</p></a></li>
+    <li  style="display: inline;"><a href="useraccount.html"><p class="menucu">MY ACCOUNT</p></a></li>
   </ul>
 </nav>
 </div>

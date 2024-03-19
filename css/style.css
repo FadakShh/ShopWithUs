@@ -1316,9 +1316,7 @@ Blog Section
 Footer
 ------------------------------------------
 */
-.footer>.row.max-inner {
-  padding: 100px 0;
-}
+
 
 .footer>.row.max-inner:before {
   content: "";
@@ -1400,7 +1398,8 @@ Footer
   background: #f0f0f0;
   color: #9d9d9d;
   font-size: 14px;
-  padding: 40px 0;
+  padding-top: 15px;
+  padding-bottom: 3px;
   text-align: center;
 }
 
