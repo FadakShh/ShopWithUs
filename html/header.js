@@ -41,6 +41,11 @@ var header = ` <div class="row max-inner">
     <li class="header-actions">
       <a href="#" title="Log out"><span class="fa fa-lock"></span> Log out</a>
     </li>
+    <li class="signin-up" >
+    <a href="sign-in-page.html" title="sign in">
+    <span class=signin-up>sign in/sign up</span></a>
+    </li>
+
   </ul>
 </div>
 
