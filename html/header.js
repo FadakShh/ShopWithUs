@@ -38,8 +38,8 @@ var header = ` <div class="row max-inner">
       </a>
     </li>
     <li class="signin-up" >
-    <a href="sign-in-page.html" title="sign in"><span class="fa fa-lock"></span>
-    <span class=signin-up>sign in-sign up</span></a>
+    <a href="adminlogin.html" title="sign in"><span class="fa fa-lock"></span>
+    <span class=signin-up>Admin-Login</span></a>
     </li>
 
   </ul>

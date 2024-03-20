@@ -4,20 +4,20 @@ var footer = `
   <div class="columns col-2">
     <h3>Address</h3>
     <p>
-      INDIGO LLC<br />
+      Eclat LLC<br />
       <br />
-      946 Park Ave<br />
-      New York, NY 10021<br />
+      11 Beirut Ave<br />
+      Lebanon,beirut <br />
       <br />
-      <a href="#">office@indigo.com</a><br />
-      (445) 932 459 934<br />           
+      <a href="#">office@Eclat.com</a><br />
+      (+961)01 111 222 <br />           
     </p>
   </div>
 
   <div class="columns col-2">
     <h3>Customer Service</h3>
     <ul>
-      <li><a href="#">About us</a></li>
+      <li><a href="Aboutus.html">About us</a></li>
       <li><a href="#">Money back guarantee</a></li>
       <li><a href="#">Help center</a></li>
       <li><a href="#">Delivery</a></li>
