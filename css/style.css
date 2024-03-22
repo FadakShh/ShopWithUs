@@ -937,7 +937,7 @@ Header
   padding: 0;
   list-style: none;
   list-style-type: none;
-  color: #9d9c9c;
+  color: #ffffff;
   display: table;
   float: left;
   font-family: "novecento_sans_widedemibold";
@@ -970,14 +970,14 @@ Header
 }
 
 #header .header-controls li .fa {
-  color: #ccc;
+  color: #fffbfb;
   font-size: 15px;
   padding: 0 7px 0 0;
 }
 
 #header .header-controls li a {
   background: #dcd9d9;
-  color: #e3dede;
+  color: #fdfdfd;
   display: block;
   padding: 7px 14px;
   line-height: 100%;
