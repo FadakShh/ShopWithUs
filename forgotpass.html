@@ -25,9 +25,29 @@
         <p class="lock-icon"><i class="fas fa-lock"> RESET PASSWORD</i></p>
         <h2>Forgot Password?</h2>
         <p>You can reset your Password here</p>
-        <input type="text" class="passInput" placeholder="Email address">
-        <button>Send My Password</button>
+        <input type="text" class="passInput" id="emailInput" placeholder="Email address">
+    <button onclick="sendPassword()">Send My Password</button>
     </div>
+
+    <script>
+        // Add event listener to clear input field when clicked
+        document.getElementById('emailInput').addEventListener('click', function() {
+          this.value = ''; // Clear input field value
+        });
+    
+        function sendPassword() {
+          // Retrieve the email address entered by the user
+          var email = document.getElementById('emailInput').value;
+    
+          // Validate the email address if needed
+          
+          // Send the password reset request to the server
+          // For demonstration, we'll just log the email to the console
+          console.log("Email address:", email);
+    
+          // You can perform further actions such as sending an AJAX request to the server to reset the password
+        }
+      </script>
 </body>
 
 </html>

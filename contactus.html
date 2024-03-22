@@ -43,7 +43,7 @@
 
     </div>
     <div class="content" style="
-      background-color: rgba(255, 255, 255, 0.598); padding-left: 20px;  ">
+      background-color: rgba(255, 255, 255, 0.598);  ">
       <div class="col-11">
         <div class="address-line">
           <img alt="location" src="images/marker.png" class="icon">
@@ -82,22 +82,22 @@
             <div class="form-row">
               <label>Full Name</label>
               <div>
-                <input type="text" class="form-field">
+                <input type="text"  class="form-field" id="name">
               </div>
             </div>
             <div class="form-row">
               <label>Email</label>
               <div>
-                <input type="text" class="form-field">
+                <input type="text"  class="form-field" id="email">
               </div>
             </div>
             <div class="form-row">
               <label>Type your message...</label>
               <div>
-                <input type="text" class="form-field">
+                <input type="text" class="form-field" id="messages">
               </div>
             </div>
-            <input type="button" class="send-btn" value="Send">
+            <input type="button" class="send-btn" value="Send" onclick="sendmessage()">
           </div>
         </form>
       </div>
@@ -128,6 +128,7 @@
 <script src="js/main.js"></script>
 <script src="html/header.js"></script>
 <script src="html/footer.js"></script>
+<script src="js/contactusjs.js"></script>
 
 
 

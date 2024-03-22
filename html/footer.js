@@ -20,7 +20,7 @@ var footer = `
       <li><a href="Aboutus.html">About us</a></li>
       <li><a href="#">Help center</a></li>
       
-      <li><a href="#">Payment</a></li>
+      <li><a href="contactus.html">Contact us</a></li>
     </ul>
   </div>
 
