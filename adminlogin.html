@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('images/bg.jpg');
+      background-size: cover; 
+      background-position: center;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 450px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .form h2 {
+      margin: 0;
+      color: #333;
+    }
+
+    .inputBox {
+      position: relative;
+      margin: 20px 0;
+    }
+
+    .inputBox input {
+      width: 50%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .inputBox span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px;
+      color: black;
+      pointer-events: none;
+      transition: 0.3s;
+    }
+
+    .inputBox input:focus + span,
+    .inputBox input:valid + span {
+      top: -20px;
+      left: 0;
+      color: #390663;
+    }
+
+    .links {
+      margin: 15px 0;
+    }
+
+    .links a {
+      text-decoration: none;
+      color:  #a73ab1;
+      margin: 0 10px;
+    }
+
+    button {
+      background-color: #a73ab1;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .links a:hover {
+      color:grey; 
+      text-decoration: underline;
+    }
+  </style>
+</head>
+    <body>
+    <form action="adminlogin.php" method="post">
+        <div class="box">
+        <div class="form">
+            <h2>Log In</h2>
+            <div class="inputBox">
+            <input type="email" name="adminemail" required>
+            <span>Email</span>
+            </div>
+            <div class="inputBox">
+            <input type="password" name="pass" required>
+            <span>Password</span>
+            </div>
+            <div class="links">
+            <a href="#">Forgot Password</a>
+            <a href="signin.php">Signup</a>
+            </div>
+            <button type="submit" name="adminlogin">Login</button>
+        </div>
+        </div>
+    </form>
+    </body>
+</html>
+
