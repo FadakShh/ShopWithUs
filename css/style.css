@@ -976,15 +976,15 @@ Header
 }
 
 #header .header-controls li a {
-  background: #f0f0f0;
-  color: #9d9c9c;
+  background: #dcd9d9;
+  color: #e3dede;
   display: block;
   padding: 7px 14px;
   line-height: 100%;
 }
 
 #header .header-controls li a:hover {
-  background: #6e6e6e;
+  background: #d8cae1;
   color: #fff;
 }
 

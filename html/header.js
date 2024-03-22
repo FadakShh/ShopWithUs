@@ -1,7 +1,7 @@
 var header = ` <div class="row max-inner">
 
 <div class="columns col-2">
-  <a href="index.html" title="Indigo" class="logo">Indigo</a>
+  <a href="index.html" title="Indigo" class="logo">Eclat</a>
 </div>
 
 <div class="columns col-6">
@@ -34,8 +34,7 @@ var header = ` <div class="row max-inner">
     <li class="header-cart">
       <a href="cart.html" title="view cart">
         <span class="fa fa-shopping-cart"></span>
-        <span class="cart-count">3 Products,</span>
-        <span class="cart-amount">$780.00</span>
+        <span class="cart-count">Cart</span>
       </a>
     </li>
     <li class="header-actions">
