@@ -21,33 +21,54 @@
 </head>
 
 <body>
-    <div class="card">
-        <p class="lock-icon"><i class="fas fa-lock"> RESET PASSWORD</i></p>
-        <h2>Forgot Password?</h2>
-        <p>You can reset your Password here</p>
-        <input type="text" class="passInput" id="emailInput" placeholder="Email address">
-    <button onclick="sendPassword()">Send My Password</button>
-    </div>
+  <div class="card">
+      <p class="lock-icon"><i class="fas fa-lock"></i> RESET PASSWORD</p>
+      <h2>Forgot Password?</h2>
+      <p>You can reset your Password here</p>
+      <input type="text" class="passInput" id="emailInput" placeholder="Email address">
+      <button onclick="sendPassword()">Send My Password</button>
+  </div>
 
-    <script>
-        // Add event listener to clear input field when clicked
-        document.getElementById('emailInput').addEventListener('click', function() {
-          this.value = ''; // Clear input field value
-        });
-    
-        function sendPassword() {
+  <script>
+      function sendPassword() {
           // Retrieve the email address entered by the user
           var email = document.getElementById('emailInput').value;
-    
+
           // Validate the email address if needed
-          
+          // For simplicity, let's assume basic validation here
+
+          // Create an object with the email address
+          var data = {
+              email: email
+          };
+
           // Send the password reset request to the server
-          // For demonstration, we'll just log the email to the console
-          console.log("Email address:", email);
-    
-          // You can perform further actions such as sending an AJAX request to the server to reset the password
-        }
-      </script>
+          var xhr = new XMLHttpRequest();
+          xhr.open("POST", "reset_password.php", true); // Replace "reset_password.php" with your server-side script URL
+          xhr.setRequestHeader("Content-Type", "application/json");
+
+          xhr.onreadystatechange = function () {
+              if (xhr.readyState === 4 && xhr.status === 200) {
+                  // Request was successful, handle response
+                  console.log(xhr.responseText); // Log response from server
+                  alert("Password reset email sent successfully."); 
+                  // Show success message to the user
+                  window.location.href = "sign-in-page.html";
+              } else {
+                  // Request failed or server error occurred
+                  console.error("Error occurred while sending password reset request.");
+                  alert("An error occurred while sending password reset request. Please try again later.");
+              }
+          };
+
+          // Convert data object to JSON string
+          var jsonData = JSON.stringify(data);
+
+          // Send the request with JSON data
+          xhr.send(jsonData);
+      }
+  </script>
 </body>
+
 
 </html>

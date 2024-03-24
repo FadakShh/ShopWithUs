@@ -7,12 +7,12 @@
 body {
     background-color: #ff99f5;
     background-image:
-        radial-gradient(at 61% 4%, rgb(211, 119, 58) 0px, transparent 50%),
+        radial-gradient(at 61% 4%, rgb(75, 43, 21) 0px, transparent 50%),
         radial-gradient(at 75% 66%, rgb(59, 40, 22) 0px, transparent 50%),
-        radial-gradient(at 98% 88%, rgb(131, 31, 13) 0px, transparent 50%),
-        radial-gradient(at 23% 16%, rgb(172, 171, 99) 0px, transparent 50%),
-        radial-gradient(at 95% 65%, rgb(239, 172, 124) 0px, transparent 50%),
-        radial-gradient(at 10% 79%, rgb(115, 145, 66) 0px, transparent 50%),
+        radial-gradient(at 98% 88%, rgb(62, 39, 5) 0px, transparent 50%),
+        radial-gradient(at 23% 16%, rgb(76, 75, 44) 0px, transparent 50%),
+        radial-gradient(at 95% 65%, rgb(121, 84, 58) 0px, transparent 50%),
+        radial-gradient(at 10% 79%, rgb(36, 10, 7) 0px, transparent 50%),
         radial-gradient(at 85% 58%, rgb(41, 22, 2) 0px, transparent 50%);
     background-repeat: no-repeat;
     color: white;

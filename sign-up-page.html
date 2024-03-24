@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
+
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
-    <title> Responsive Registration Form | CodingLab </title>
+    <title> Register | Create your own account </title>
     <link rel="stylesheet" href="css/signupcss.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-    <div><a href="index.html">
-            <p class="divback">&laquo;GO BACK&laquo;</p>
+<body style="background-image: url(images/tailoring-studio-with-dress-form-laptop.jpg);background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;">
+    <div ><a href="index.html">
+            <p class="divback"> <b>&laquo;GO BACK&laquo;</b> </p>
         </a>
     </div>
     <div class="container">
         <div class="title">Registration</div>
         <div class="content">
-            <form action="#">
+            <form action="#" id="form">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Full Name</span>
-                        <input type="text" placeholder="Enter your name" required>
+                        <input type="text" placeholder="Enter your name" required id="name">
                     </div>
                     <div class="input-box">
                         <span class="details">Username</span>
-                        <input type="text" placeholder="Enter your username" required>
+                        <input type="text" placeholder="Enter your username" required id="username">
                     </div>
                     <div class="input-box">
                         <span class="details">Email</span>
-                        <input type="text" placeholder="Enter your email" required>
+                        <input type="text" placeholder="Enter your email" required id="email">
                     </div>
                     <div class="input-box">
                         <span class="details">Phone Number</span>
-                        <input type="text" placeholder="Enter your number" required>
+                        <input type="text" placeholder="Enter your number" required id="phonenb">
                     </div>
                     <div class="input-box">
                         <span class="details">Password</span>
-                        <input type="text" placeholder="Enter your password" required>
+                        <input type="text" placeholder="Enter your password" required id="password">
                     </div>
                     <div class="input-box">
                         <span class="details">Confirm Password</span>
-                        <input type="text" placeholder="Confirm your password" required>
+                        <input type="text" placeholder="Confirm your password" required id="password2">
                     </div>
                 </div>
                 <div class="gender-details">
                     <input type="radio" name="gender" id="dot-1">
                     <input type="radio" name="gender" id="dot-2">
-                    <input type="radio" name="gender" id="dot-3">
+                    
                     <span class="gender-title">Gender</span>
                     <div class="category">
                         <label for="dot-1">
@@ -58,10 +61,7 @@
                             <span class="dot two"></span>
                             <span class="gender">Female</span>
                         </label>
-                        <label for="dot-3">
-                            <span class="dot three"></span>
-                            <span class="gender">Prefer not to say</span>
-                        </label>
+                      
                     </div>
                 </div>
                 <div class="button">
@@ -70,7 +70,7 @@
             </form>
         </div>
     </div>
-
+    <script src="js/signupjs.js"></script>
 </body>
 
 </html>
