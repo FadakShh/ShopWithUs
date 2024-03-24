@@ -116,7 +116,7 @@
 
       <!-- start: grid item -->
       <div class="columns col-3 grid-item">
-        <div class="grid-item-media"><a href="product.html"><img src="images/grid-item-image-22.jpg" /></a></div>
+        <div class="grid-item-media"><a href="product.html"><img src="images/grid-item-image-2.jpg" /></a></div>
         <div class="grid-item-desc">
           <h2>
             <a class="grid-item-link" href="product.html">
@@ -131,7 +131,7 @@
       <!-- end: grid item -->
       <!-- start: grid item -->
       <div class="columns col-3 grid-item">
-        <div class="grid-item-media"><a href="product.html"><img src="images/grid-item-image-44.jpg" /></a></div>
+        <div class="grid-item-media"><a href="product.html"><img src="images/grid-item-image-4.jpg" /></a></div>
         <div class="grid-item-desc">
           <h2>
             <a href="product.html">
@@ -285,13 +285,14 @@
   <script src="html/footer.js"></script>
   <script src="html/header.js"></script>
 
+  
   <script>
-    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-    (function (d, t) {
-      var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      g.src = '//www.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g, s)
-    }(document, 'script'));
+    document.getElementById('material-select').addEventListener('change', function() {
+      var selectedValue = this.value;
+      if (selectedValue === "Men") {
+        window.location.href = "menshop.html";
+      }
+    });
   </script>
 </body>
 
