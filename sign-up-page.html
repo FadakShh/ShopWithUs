@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <title> Register | Create your own account </title>
     <link rel="stylesheet" href="css/signupcss.css">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -13,7 +13,7 @@
 background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;">
-    <div ><a href="index.html">
+    <div><a href="index.html">
             <p class="divback"> <b>&laquo;GO BACK&laquo;</b> </p>
         </a>
     </div>
@@ -23,34 +23,34 @@ background-attachment: fixed;">
             <form action="#" id="form">
                 <div class="user-details">
                     <div class="input-box">
+                        <input type="text" placeholder=" " required id="name">
                         <span class="details">Full Name</span>
-                        <input type="text" placeholder="Enter your name" required id="name">
                     </div>
                     <div class="input-box">
+                        <input type="text" placeholder=" " required id="username">
                         <span class="details">Username</span>
-                        <input type="text" placeholder="Enter your username" required id="username">
                     </div>
                     <div class="input-box">
+                        <input type="text" placeholder=" " required id="email">
                         <span class="details">Email</span>
-                        <input type="text" placeholder="Enter your email" required id="email">
+                        <span class="error-message">Please enter a valid email</span>
                     </div>
                     <div class="input-box">
+                        <input type="text" placeholder=" " required id="phonenb">
                         <span class="details">Phone Number</span>
-                        <input type="text" placeholder="Enter your number" required id="phonenb">
                     </div>
                     <div class="input-box">
+                        <input type="password" placeholder=" " required id="password">
                         <span class="details">Password</span>
-                        <input type="text" placeholder="Enter your password" required id="password">
                     </div>
                     <div class="input-box">
+                        <input type="password" placeholder=" " required id="password2">
                         <span class="details">Confirm Password</span>
-                        <input type="text" placeholder="Confirm your password" required id="password2">
                     </div>
                 </div>
                 <div class="gender-details">
                     <input type="radio" name="gender" id="dot-1">
                     <input type="radio" name="gender" id="dot-2">
-                    
                     <span class="gender-title">Gender</span>
                     <div class="category">
                         <label for="dot-1">
@@ -61,7 +61,6 @@ background-attachment: fixed;">
                             <span class="dot two"></span>
                             <span class="gender">Female</span>
                         </label>
-                      
                     </div>
                 </div>
                 <div class="button">
@@ -70,7 +69,61 @@ background-attachment: fixed;">
             </form>
         </div>
     </div>
-    <script src="js/signupjs.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const inputFields = document.querySelectorAll('.input-box input');
+
+            // Add event listeners for input focus and blur
+            inputFields.forEach(inputField => {
+                inputField.addEventListener('focus', () => {
+                    inputField.parentElement.querySelector('.details').classList.add('active');
+                });
+
+                inputField.addEventListener('blur', () => {
+                    if (inputField.value === '') {
+                        inputField.parentElement.querySelector('.details').classList.remove('active');
+                    }
+                });
+            });
+
+            // JavaScript for radio button styling
+            const radioButtons = document.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(radioButton => {
+                radioButton.addEventListener('change', () => {
+                    radioButtons.forEach(rb => {
+                        rb.nextElementSibling.classList.remove('selected');
+                    });
+                    if (radioButton.checked) {
+                        radioButton.nextElementSibling.classList.add('selected');
+                    }
+                });
+            });
+
+            // Add event listener for form submission
+            const form = document.getElementById('form');
+            form.addEventListener('submit', function (event) {
+                const emailInput = document.getElementById('email');
+                const errorMessage = emailInput.nextElementSibling;
+                if (!validateEmail(emailInput.value)) {
+                    errorMessage.style.display = 'block';
+                    event.preventDefault();
+                }
+            });
+
+            // Add event listener for email input changes
+            const emailInput = document.getElementById('email');
+            emailInput.addEventListener('input', function () {
+                const errorMessage = this.nextElementSibling;
+                errorMessage.style.display = 'none';
+            });
+
+            // Function to validate email
+            function validateEmail(email) {
+                const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return pattern.test(email);
+            }
+        });
+    </script>
 </body>
 
 </html>

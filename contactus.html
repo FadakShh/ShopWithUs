@@ -43,7 +43,7 @@
 
     </div>
     <div class="content" style="
-      background-color: rgba(255, 255, 255, 0.598);  ">
+      background-color: rgba(255, 255, 255, 0.598); padding-left: 20px; ">
       <div class="col-11">
         <div class="address-line">
           <img alt="location" src="images/marker.png" class="icon">
@@ -80,19 +80,19 @@
             <div class="form-row">
               <label>Full Name</label>
               <div>
-                <input type="text" class="form-field" id="name">
+                <input type="text" class="form-field" id="name" required>
               </div>
             </div>
             <div class="form-row">
               <label>Email</label>
               <div>
-                <input type="text" class="form-field" id="email">
+                <input type="text" class="form-field" id="email" required>
               </div>
             </div>
             <div class="form-row">
               <label>Type your message...</label>
               <div>
-                <input type="text" class="form-field" id="messages">
+                <input type="text" class="form-field" id="messages" required>
               </div>
             </div>
             <input type="button" class="send-btn" value="Send" onclick="sendmessage()">
@@ -126,7 +126,7 @@
 <script src="js/main.js"></script>
 <script src="html/header.js"></script>
 <script src="html/footer.js"></script>
-<script src="js/contactusjs.js"></script>
+
 
 
 
@@ -134,10 +134,14 @@
   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
   (function (d, t) {
     var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-    g.src = '//www.google-analytics.com/ga.js';
+    g.src = '//www.google-analytics.com/analytics.js';
     s.parentNode.insertBefore(g, s)
   }(document, 'script'));
+  
+ 
 </script>
+
+
 </body>
 
 </html>

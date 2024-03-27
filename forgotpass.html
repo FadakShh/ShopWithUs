@@ -30,43 +30,47 @@
   </div>
 
   <script>
-      function sendPassword() {
-          // Retrieve the email address entered by the user
-          var email = document.getElementById('emailInput').value;
+         function sendPassword() {
+        var emailInput = document.getElementById("emailInput");
+        var email = emailInput.value.trim();
 
-          // Validate the email address if needed
-          // For simplicity, let's assume basic validation here
+        // Reset previous error styles
+        emailInput.classList.remove("error");
 
-          // Create an object with the email address
-          var data = {
-              email: email
-          };
+        // Check if email is empty
+        if (email === "") {
+            emailInput.classList.add("error");
+            return; // Don't proceed if email is empty
+        }
 
-          // Send the password reset request to the server
-          var xhr = new XMLHttpRequest();
-          xhr.open("POST", "reset_password.php", true); // Replace "reset_password.php" with your server-side script URL
-          xhr.setRequestHeader("Content-Type", "application/json");
+        // Perform validation if needed
+        // Here, you can send the password reset request to the server
+        // For demonstration purposes, let's just log the email to console
+        console.log("Sending password reset request to: " + email);
+        // You can add AJAX requests or other logic to send the password reset request
+        // Example: using Fetch API to send a POST request to a server
+        /*
+        fetch('/resetpassword', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email: email }),
+        })
+        .then(response => {
+            // Handle response here
+        })
+        .catch(error => {
+            // Handle error here
+        });
+        */
 
-          xhr.onreadystatechange = function () {
-              if (xhr.readyState === 4 && xhr.status === 200) {
-                  // Request was successful, handle response
-                  console.log(xhr.responseText); // Log response from server
-                  alert("Password reset email sent successfully."); 
-                  // Show success message to the user
-                  window.location.href = "sign-in-page.html";
-              } else {
-                  // Request failed or server error occurred
-                  console.error("Error occurred while sending password reset request.");
-                  alert("An error occurred while sending password reset request. Please try again later.");
-              }
-          };
+        // Change button text and disable button after sending request
+        var sendButton = document.querySelector("button");
+        sendButton.innerText = "Password Sent";
+        sendButton.disabled = true;
+    }
 
-          // Convert data object to JSON string
-          var jsonData = JSON.stringify(data);
-
-          // Send the request with JSON data
-          xhr.send(jsonData);
-      }
   </script>
 </body>
 
