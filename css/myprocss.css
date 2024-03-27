@@ -1,0 +1,20 @@
+#myprobody{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.max-innerr {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.my-account-section {
+    padding: 40px 0;
+}
+
+#h2pro {
+    margin-bottom: 20px;
+}
