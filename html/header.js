@@ -11,9 +11,9 @@ var header = ` <div class="row max-inner">
 <nav class="main-nav"  >
   <ul>
     <li  style="display: inline;"><a href="index.html"><p class="menucu">HOME</p></a></li>
-    <li  style="display: inline;"><a href="shop.html"><p class="menucu">CATALOG</p></a></li>
+    <li  style="display: inline;"><a href="ourcollection.html"><p class="menucu">CATALOG</p></a></li>
     <li  style="display: inline;"><a href="Aboutus.html"><p class="menucu">ABOUT US</p></a></li>
-    <li  style="display: inline;"><a href="useraccount.html"><p class="menucu">MY ACCOUNT</p></a></li>
+    <li  style="display: inline;"><a href="myprofile.html"><p class="menucu">MY ACCOUNT</p></a></li>
   </ul>
 </nav>
 </div>
