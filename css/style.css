@@ -937,7 +937,7 @@ Header
   padding: 0;
   list-style: none;
   list-style-type: none;
-  color: #9d9c9c;
+  color: #000000;
   display: table;
   float: left;
   font-family: "novecento_sans_widedemibold";
@@ -970,21 +970,21 @@ Header
 }
 
 #header .header-controls li .fa {
-  color: #ccc;
+  color: #000000;
   font-size: 15px;
   padding: 0 7px 0 0;
 }
 
 #header .header-controls li a {
   background: #dcd9d9;
-  color: #e3dede;
+  color: #080808;
   display: block;
   padding: 7px 14px;
   line-height: 100%;
 }
 
 #header .header-controls li a:hover {
-  background: #d8cae1;
+  background: #7c787e;
   color: #fff;
 }
 
