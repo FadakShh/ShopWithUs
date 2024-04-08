@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+      <title>Eclat -Radiating Brilliance and Distinction in Style.</title>
+    
+      <meta name="description" content="Eclat -Radiating Brilliance and Distinction in Style">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    
+      <link rel="stylesheet" href="css\bootstrap.min.css">
+    
+      <link rel="stylesheet" href="css/normalize-and-boilerplate.css" />
+      <link rel="stylesheet" href="css/font-awesome.css" />
+      <link rel="stylesheet" href="css/flexslider.css" />
+      <link rel="stylesheet" href="css/style.css" />
+    
+      <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+      <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .wishlist-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .wishlist-item .name {
+      font-weight: bold;
+    }
+    .wishlist-item .remove-btn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .wishlist-item .remove-btn:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+  
+</head>
+
+<body style="background-image: url(images/33.jpg); background-repeat: no-repeat; background-size: cover;">
+    <header id="header"  style="padding: 10px;">
+        <h1 style="font-size: 24px;">Wishlist</h1>
+    </header>
+  <div id="wishlist"></div>
+  <script>
+    const wishlistItems = [
+      { id: 1, name: "Item 1" },
+      { id: 2, name: "Item 2" },
+      { id: 3, name: "Item 3" }
+    ];
+
+    function renderWishlist() {
+      const wishlistContainer = document.getElementById('wishlist');
+      wishlistContainer.innerHTML = '';
+
+      wishlistItems.forEach(item => {
+        const wishlistItem = document.createElement('div');
+        wishlistItem.className = 'wishlist-item';
+        wishlistItem.innerHTML = `
+          <span class="name">${item.name}</span>
+          <button class="remove-btn" onclick="removeItem(${item.id})">Remove</button>
+        `;
+        wishlistContainer.appendChild(wishlistItem);
+      });
+    }
+
+   
+    function removeItem(id) {
+      const index = wishlistItems.findIndex(item => item.id === id);
+      if (index !== -1) {
+        wishlistItems.splice(index, 1);
+        renderWishlist();
+      }
+    }
+
+    
+    renderWishlist();
+  </script>
+</body>
+</html>
