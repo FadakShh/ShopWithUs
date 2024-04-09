@@ -16,17 +16,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="css/forgotpasscss.css" rel="stylesheet">
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Reset your Password - Eclat </title>
 </head>
 
-<body>
-  <div class="card">
-      <p class="lock-icon"><i class="fas fa-lock"></i> RESET PASSWORD</p>
-      <h2>Forgot Password?</h2>
-      <p>You can reset your Password here</p>
-      <input type="text" class="passInput" id="emailInput" placeholder="Email address">
-      <button onclick="sendPassword()">Send My Password</button>
+<body style="background-image: url(images/test2.jpg); background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+">
+  <div class="wrapper">
+    <div class="container">
+        <div class="title-section">
+            <h2 class="title">Reset Password</h2>
+            <i class='bx bxs-lock-alt'></i>
+            <p class="info">
+                Enter your email address to receive a password reset link. 
+                If an account exists with this email, you'll receive further instructions via email
+            </p>
+        </div>
+
+        <form action="" class="form">
+            <div class="input-group">
+                <label for="" class="label-title">Enter Your Email</label>
+                <input type="email" name="email" placeholder="Enter Your Email">
+                <span class="icon">&#9993;</span>
+            </div>
+            <div class="input-group">
+                <button class="submit-btn" type="submit">Send My Password</button>
+            </div>
+        </form>
+    </div>
   </div>
 
   <script>
