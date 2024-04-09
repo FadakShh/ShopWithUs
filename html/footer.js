@@ -18,20 +18,19 @@ var footer = `
     <h3>Customer Service</h3>
     <ul>
       <li><a href="Aboutus.html">About us</a></li>
-      <li><a href="#">Money back guarantee</a></li>
       <li><a href="#">Help center</a></li>
-      <li><a href="#">Delivery</a></li>
-      <li><a href="#">Payment</a></li>
+      
+      <li><a href="contactus.html">Contact us</a></li>
     </ul>
   </div>
 
   <div class="columns col-2">
     <h3>Account</h3>
     <ul>
-      <li><a href="#">Login</a></li>
-      <li><a href="#">Register</a></li>
-      <li><a href="#">My Account</a></li>
-      <li><a href="#">Logout</a></li>
+      <li><a href="sign-in-page.html">Login</a></li>
+      <li><a href="sign-up-page.html">Register</a></li>
+      <li><a href="myprofile.html">My Account</a></li>
+      
     </ul>
   </div>
 

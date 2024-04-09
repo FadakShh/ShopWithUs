@@ -13,13 +13,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(150deg, #f5f5dc, #80461b);
+
 }
 
 .container {
     max-width: 700px;
     width: 100%;
-    background-color: #fff;
+    background-color: #ffffff84;
     padding: 30px 30px;
     margin-right: 150PX;
     border-radius: 5px;
@@ -107,8 +107,7 @@ form .category label .dot {
 }
 
 #dot-1:checked~.category label .one,
-#dot-2:checked~.category label .two,
-#dot-3:checked~.category label .three {
+#dot-2:checked~.category label .two {
     background: #a52a2a;
     border-color: #d9d9d9;
 }
@@ -197,4 +196,30 @@ a {
 
 a:hover {
     color: #ccc
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input:focus~.details,
+.input-box input:valid~.details {
+    top: -20px;
+    font-size: 12px;
+    color: #333;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #2196F3;
+}
+
+.input-box input:focus~.error-message,
+.input-box input:invalid~.error-message {
+    display: none;
+}
+
+.input-box input:invalid {
+    border-color: #361207;
 }
